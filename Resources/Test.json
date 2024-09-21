@@ -1,0 +1,3765 @@
+{
+    "projectFileVersion": "2022-10-01-preview",
+    "stringIndexType": "Utf16CodeUnit",
+    "metadata": {
+        "projectKind": "Conversation",
+        "settings": {
+            "confidenceThreshold": 0.7,
+            "normalizeCasing": false,
+            "augmentDiacritics": false
+        },
+        "projectName": "Test",
+        "multilingual": false,
+        "description": "",
+        "language": "en-us"
+    },
+    "assets": {
+        "projectKind": "Conversation",
+        "intents": [
+            {
+                "category": "None"
+            },
+            {
+                "category": "Confirm"
+            },
+            {
+                "category": "Reject"
+            },
+            {
+                "category": "PersonalOpinionPos"
+            },
+            {
+                "category": "PersonalOpinionNeg"
+            },
+            {
+                "category": "GetBy"
+            },
+            {
+                "category": "GiveName"
+            }
+        ],
+        "entities": [
+            {
+                "category": "Person",
+                "compositionSetting": "combineComponents",
+                "prebuilts": [
+                    {
+                        "category": "Person.Name"
+                    }
+                ],
+                "requiredComponents": [
+                    "learned",
+                    "prebuilts"
+                ]
+            },
+            {
+                "category": "Movie",
+                "compositionSetting": "combineComponents"
+            },
+            {
+                "category": "Genre",
+                "compositionSetting": "combineComponents",
+                "list": {
+                    "sublists": [
+                        {
+                            "listKey": "FAMILY",
+                            "synonyms": [
+                                {
+                                    "language": "en-us",
+                                    "values": [
+                                        "FAMILY",
+                                        "family",
+                                        "kids"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "listKey": "CRIME",
+                            "synonyms": [
+                                {
+                                    "language": "en-us",
+                                    "values": [
+                                        "crime"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "listKey": "HISTORY",
+                            "synonyms": [
+                                {
+                                    "language": "en-us",
+                                    "values": [
+                                        "HISTORY",
+                                        "history",
+                                        "historical"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "listKey": "WESTERN",
+                            "synonyms": [
+                                {
+                                    "language": "en-us",
+                                    "values": [
+                                        "western",
+                                        "cowboy"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "listKey": "BIOGRAPHY",
+                            "synonyms": [
+                                {
+                                    "language": "en-us",
+                                    "values": [
+                                        "biography",
+                                        "biographies",
+                                        "biopic",
+                                        "bio-pic",
+                                        "biopics",
+                                        "bio-pics",
+                                        "true story",
+                                        "biographical"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "listKey": "FANTASY",
+                            "synonyms": [
+                                {
+                                    "language": "en-us",
+                                    "values": [
+                                        "fantasy"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "listKey": "ANIMATION",
+                            "synonyms": [
+                                {
+                                    "language": "en-us",
+                                    "values": [
+                                        "ANIMATION",
+                                        "animation",
+                                        "cartoon",
+                                        "cartoons",
+                                        "animated"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "listKey": "ADVENTURE",
+                            "synonyms": [
+                                {
+                                    "language": "en-us",
+                                    "values": [
+                                        "adventure"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "listKey": "COMEDY",
+                            "synonyms": [
+                                {
+                                    "language": "en-us",
+                                    "values": [
+                                        "comedy",
+                                        "funny",
+                                        "comedies"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "listKey": "ROMANCE",
+                            "synonyms": [
+                                {
+                                    "language": "en-us",
+                                    "values": [
+                                        "romance",
+                                        "love"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "listKey": "DRAMA",
+                            "synonyms": [
+                                {
+                                    "language": "en-us",
+                                    "values": [
+                                        "drama"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "listKey": "MYSTERY",
+                            "synonyms": [
+                                {
+                                    "language": "en-us",
+                                    "values": [
+                                        "mistery",
+                                        "detective"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "listKey": "THRILLER",
+                            "synonyms": [
+                                {
+                                    "language": "en-us",
+                                    "values": [
+                                        "thriller",
+                                        "suspense",
+                                        "thrillers"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "listKey": "ACTION",
+                            "synonyms": [
+                                {
+                                    "language": "en-us",
+                                    "values": [
+                                        "action"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "listKey": "SCI-FI",
+                            "synonyms": [
+                                {
+                                    "language": "en-us",
+                                    "values": [
+                                        "science fiction",
+                                        "scifi",
+                                        "sci-fi",
+                                        "sci fi"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "requiredComponents": [
+                    "learned",
+                    "list"
+                ]
+            },
+            {
+                "category": "UserName",
+                "compositionSetting": "combineComponents",
+                "prebuilts": [
+                    {
+                        "category": "Person.Name"
+                    }
+                ],
+                "requiredComponents": [
+                    "learned",
+                    "prebuilts"
+                ]
+            }
+        ],
+        "utterances": [
+            {
+                "text": "No, Im'm not",
+                "language": "en-us",
+                "intent": "Reject",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Audrey Hepburn",
+                "language": "en-us",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 0,
+                        "length": 14
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "Jack Nicholson",
+                "language": "en-us",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 0,
+                        "length": 14
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "Gene Hackman",
+                "language": "en-us",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 0,
+                        "length": 12
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "Anne Hathaway",
+                "language": "en-us",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 0,
+                        "length": 13
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "Julia Roberts",
+                "language": "en-us",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 0,
+                        "length": 13
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "George Clooney",
+                "language": "en-us",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 0,
+                        "length": 14
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "Vincent Cassel",
+                "language": "en-us",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 0,
+                        "length": 14
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "natalie portman",
+                "language": "en-us",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 0,
+                        "length": 15
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "johnny depp",
+                "language": "en-us",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 0,
+                        "length": 11
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "animation",
+                "language": "en-us",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Genre",
+                        "offset": 0,
+                        "length": 9
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "cartoon",
+                "language": "en-us",
+                "intent": "PersonalOpinionPos",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "fantasy",
+                "language": "en-us",
+                "intent": "PersonalOpinionPos",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "western",
+                "language": "en-us",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Genre",
+                        "offset": 0,
+                        "length": 7
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "thriller",
+                "language": "en-us",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Genre",
+                        "offset": 0,
+                        "length": 8
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "action",
+                "language": "en-us",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Genre",
+                        "offset": 0,
+                        "length": 6
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "I go by Harry nice to meet you",
+                "language": "en-us",
+                "intent": "GiveName",
+                "entities": [
+                    {
+                        "category": "UserName",
+                        "offset": 8,
+                        "length": 5
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "Call me Lara",
+                "language": "en-us",
+                "intent": "GiveName",
+                "entities": [
+                    {
+                        "category": "UserName",
+                        "offset": 8,
+                        "length": 4
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "I'm Marcus",
+                "language": "en-us",
+                "intent": "GiveName",
+                "entities": [
+                    {
+                        "category": "UserName",
+                        "offset": 4,
+                        "length": 6
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "I am Eleanor",
+                "language": "en-us",
+                "intent": "GiveName",
+                "entities": [
+                    {
+                        "category": "UserName",
+                        "offset": 5,
+                        "length": 7
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "Everyone calls me Lucy",
+                "language": "en-us",
+                "intent": "GiveName",
+                "entities": [
+                    {
+                        "category": "UserName",
+                        "offset": 18,
+                        "length": 4
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "Anne",
+                "language": "en-us",
+                "intent": "GiveName",
+                "entities": [
+                    {
+                        "category": "UserName",
+                        "offset": 0,
+                        "length": 4
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "Mary",
+                "language": "en-us",
+                "intent": "GiveName",
+                "entities": [
+                    {
+                        "category": "UserName",
+                        "offset": 0,
+                        "length": 4
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "Jason",
+                "language": "en-us",
+                "intent": "GiveName",
+                "entities": [
+                    {
+                        "category": "UserName",
+                        "offset": 0,
+                        "length": 5
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "Philip",
+                "language": "en-us",
+                "intent": "GiveName",
+                "entities": [
+                    {
+                        "category": "UserName",
+                        "offset": 0,
+                        "length": 6
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "You can call me Leonard",
+                "language": "en-us",
+                "intent": "GiveName",
+                "entities": [
+                    {
+                        "category": "UserName",
+                        "offset": 16,
+                        "length": 7
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "Nice to meet you. I am Nicholas",
+                "language": "en-us",
+                "intent": "GiveName",
+                "entities": [
+                    {
+                        "category": "UserName",
+                        "offset": 23,
+                        "length": 8
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "Hello. My name is Antonio",
+                "language": "en-us",
+                "intent": "GiveName",
+                "entities": [
+                    {
+                        "category": "UserName",
+                        "offset": 18,
+                        "length": 7
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i cannot imagine anyone disliking anne hataway",
+                "language": "en-us",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 34,
+                        "length": 12
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "I enjoyed a few angry men a lot",
+                "language": "en-us",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Movie",
+                        "offset": 10,
+                        "length": 15
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i think nobody can be better than jack nicholson. He is the greatest actor ever lived",
+                "language": "en-us",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 34,
+                        "length": 14
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "yes",
+                "language": "en-us",
+                "intent": "Confirm",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "absolutely",
+                "language": "en-us",
+                "intent": "Confirm",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "right",
+                "language": "en-us",
+                "intent": "Confirm",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "of course",
+                "language": "en-us",
+                "intent": "Confirm",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I love Natalie Portman",
+                "language": "en-us",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 7,
+                        "length": 15
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "I won't see anything with Nicholas Cage",
+                "language": "en-us",
+                "intent": "PersonalOpinionNeg",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 26,
+                        "length": 13
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "I cannot stand Willem Defoe",
+                "language": "en-us",
+                "intent": "PersonalOpinionNeg",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 15,
+                        "length": 12
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "I hate Tom Hanks",
+                "language": "en-us",
+                "intent": "PersonalOpinionNeg",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 7,
+                        "length": 9
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "a good comedy or a cartoon",
+                "intent": "GetBy",
+                "entities": [
+                    {
+                        "category": "Genre",
+                        "offset": 7,
+                        "length": 6
+                    },
+                    {
+                        "category": "Genre",
+                        "offset": 19,
+                        "length": 7
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "a movie starring sandra bullock",
+                "intent": "GetBy",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 17,
+                        "length": 14
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "adam sandler is so fun",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 0,
+                        "length": 12
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "ah, there 's will smith, i'm going to see it",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 13,
+                        "length": 10
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "avatar is a stain in the history of movies. visually beautiful but very boring to watch",
+                "intent": "PersonalOpinionNeg",
+                "entities": [
+                    {
+                        "category": "Movie",
+                        "offset": 0,
+                        "length": 6
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "brad pitt is my favorite actor",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 0,
+                        "length": 9
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "bruce willis is amazing in everything is doing",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 0,
+                        "length": 12
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "can you recommend me a horror or a thriller?",
+                "intent": "GetBy",
+                "entities": [
+                    {
+                        "category": "Genre",
+                        "offset": 23,
+                        "length": 6
+                    },
+                    {
+                        "category": "Genre",
+                        "offset": 35,
+                        "length": 8
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "what movies do you recommend me with tom hanks?",
+                "intent": "GetBy",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 37,
+                        "length": 9
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "comedies are my favourites",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Genre",
+                        "offset": 0,
+                        "length": 8
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "comedies are not something i enjoy",
+                "intent": "PersonalOpinionNeg",
+                "entities": [
+                    {
+                        "category": "Genre",
+                        "offset": 0,
+                        "length": 8
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "comedies in general, i like boorish humor",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Genre",
+                        "offset": 0,
+                        "length": 8
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "could you recommend a movie starring tom hanks?",
+                "intent": "GetBy",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 37,
+                        "length": 9
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "could you recommend a movie with anthony hopkins?",
+                "intent": "GetBy",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 33,
+                        "length": 15
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "could you suggest me a fantasy movie?",
+                "intent": "GetBy",
+                "entities": [
+                    {
+                        "category": "Genre",
+                        "offset": 23,
+                        "length": 7
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "denzel washington is a great actor",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 0,
+                        "length": 17
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "denzel washington is not my favorite actor",
+                "intent": "PersonalOpinionNeg",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 0,
+                        "length": 17
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "die hard doesn't appeal to me",
+                "intent": "PersonalOpinionNeg",
+                "entities": [
+                    {
+                        "category": "Movie",
+                        "offset": 0,
+                        "length": 8
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "do you any suggestion about some smart comedy film?",
+                "intent": "GetBy",
+                "entities": [
+                    {
+                        "category": "Genre",
+                        "offset": 39,
+                        "length": 6
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "do you have any other action movie recommendation?",
+                "intent": "GetBy",
+                "entities": [
+                    {
+                        "category": "Genre",
+                        "offset": 22,
+                        "length": 6
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "do you know a movie with tom cruise?",
+                "intent": "GetBy",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 25,
+                        "length": 10
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "drama, suspense, something that catches my attention for the whole time",
+                "intent": "GetBy",
+                "entities": [
+                    {
+                        "category": "Genre",
+                        "offset": 0,
+                        "length": 5
+                    },
+                    {
+                        "category": "Genre",
+                        "offset": 7,
+                        "length": 8
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "eva mendez? i love her!",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 0,
+                        "length": 10
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "films like interstellar are beautiful because they make you think",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Movie",
+                        "offset": 11,
+                        "length": 12
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "find a quentin tarantino movie",
+                "intent": "GetBy",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 7,
+                        "length": 17
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "good point. i think that i just wanna see a comedy today",
+                "intent": "GetBy",
+                "entities": [
+                    {
+                        "category": "Genre",
+                        "offset": 44,
+                        "length": 6
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "great movie!",
+                "intent": "PersonalOpinionPos",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "great. if will smith is in this movie, it must be nice. it seems good",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 10,
+                        "length": 10
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "have you seen sci fi movies that you can recommend me?",
+                "intent": "GetBy",
+                "entities": [
+                    {
+                        "category": "Genre",
+                        "offset": 14,
+                        "length": 6
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "hello world",
+                "intent": "None",
+                "entities": []
+            },
+            {
+                "text": "how's the weather today",
+                "intent": "None",
+                "entities": []
+            },
+            {
+                "text": "hunger games sucks",
+                "intent": "PersonalOpinionNeg",
+                "entities": [
+                    {
+                        "category": "Movie",
+                        "offset": 0,
+                        "length": 12
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i am a fan of brad pitt, and fight club is one of my favorite of his films.",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 14,
+                        "length": 9
+                    },
+                    {
+                        "category": "Movie",
+                        "offset": 29,
+                        "length": 10
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i am a fan of meryl streep",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 14,
+                        "length": 12
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i am a fan of the addams family and of the original series starring john astin and caroline jones",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Movie",
+                        "offset": 14,
+                        "length": 17
+                    },
+                    {
+                        "category": "Person",
+                        "offset": 68,
+                        "length": 10
+                    },
+                    {
+                        "category": "Person",
+                        "offset": 83,
+                        "length": 14
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i am looking for a comedy",
+                "intent": "GetBy",
+                "entities": [
+                    {
+                        "category": "Genre",
+                        "offset": 19,
+                        "length": 6
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i am not a fan of natalie portman",
+                "intent": "PersonalOpinionNeg",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 18,
+                        "length": 15
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i am not really into action movies",
+                "intent": "PersonalOpinionNeg",
+                "entities": [
+                    {
+                        "category": "Genre",
+                        "offset": 21,
+                        "length": 6
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i avoid action movies because i didn't like the ones i've seen",
+                "intent": "PersonalOpinionNeg",
+                "entities": [
+                    {
+                        "category": "Genre",
+                        "offset": 8,
+                        "length": 6
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i can't wait for the next star wars' movie",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Movie",
+                        "offset": 26,
+                        "length": 9
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i cannot enjoy titanic as i am not a admirer of leonardo di caprio's work",
+                "intent": "PersonalOpinionNeg",
+                "entities": [
+                    {
+                        "category": "Movie",
+                        "offset": 15,
+                        "length": 7
+                    },
+                    {
+                        "category": "Person",
+                        "offset": 48,
+                        "length": 18
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i didn't finish to watch i am a legend because of the dog dying",
+                "intent": "PersonalOpinionNeg",
+                "entities": [
+                    {
+                        "category": "Movie",
+                        "offset": 25,
+                        "length": 13
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i didn't like it",
+                "intent": "PersonalOpinionNeg",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "i dislike harry potter as i am not fond of fantasy movies",
+                "intent": "PersonalOpinionNeg",
+                "entities": [
+                    {
+                        "category": "Movie",
+                        "offset": 10,
+                        "length": 12
+                    },
+                    {
+                        "category": "Genre",
+                        "offset": 43,
+                        "length": 7
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i do not have much admiration for john travolta as an actor, particularly in the movie grease",
+                "intent": "PersonalOpinionNeg",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 34,
+                        "length": 13
+                    },
+                    {
+                        "category": "Movie",
+                        "offset": 87,
+                        "length": 6
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i don't appreciate comedies as i didn't enjoy the movies i saw",
+                "intent": "PersonalOpinionNeg",
+                "entities": [
+                    {
+                        "category": "Genre",
+                        "offset": 19,
+                        "length": 8
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i don't feel anything strong about johnny depp",
+                "intent": "PersonalOpinionNeg",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 35,
+                        "length": 11
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i don't feel strongy about star trek",
+                "intent": "PersonalOpinionNeg",
+                "entities": [
+                    {
+                        "category": "Movie",
+                        "offset": 27,
+                        "length": 9
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i don't have a strong opinion about bonjour tristesse",
+                "intent": "PersonalOpinionNeg",
+                "entities": [
+                    {
+                        "category": "Movie",
+                        "offset": 36,
+                        "length": 17
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i don't hold a firm stance about avengers",
+                "intent": "PersonalOpinionNeg",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "i don't hold a particularly firm viewpoint on the bell boy",
+                "intent": "PersonalOpinionNeg",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "i don't like action movies",
+                "intent": "PersonalOpinionNeg",
+                "entities": [
+                    {
+                        "category": "Genre",
+                        "offset": 13,
+                        "length": 6
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i don't like john travolta especially in grease",
+                "intent": "PersonalOpinionNeg",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 13,
+                        "length": 13
+                    },
+                    {
+                        "category": "Movie",
+                        "offset": 41,
+                        "length": 6
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i don't like watching horror movies",
+                "intent": "PersonalOpinionNeg",
+                "entities": [
+                    {
+                        "category": "Genre",
+                        "offset": 22,
+                        "length": 6
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i don't really like horror movies particularly the ones similar to smile",
+                "intent": "PersonalOpinionNeg",
+                "entities": [
+                    {
+                        "category": "Genre",
+                        "offset": 20,
+                        "length": 6
+                    },
+                    {
+                        "category": "Movie",
+                        "offset": 67,
+                        "length": 5
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i don't watch science fiction series because i didn't like the ones i've seen",
+                "intent": "PersonalOpinionNeg",
+                "entities": [
+                    {
+                        "category": "Genre",
+                        "offset": 14,
+                        "length": 15
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i don't watch thrillers because i didn't find the ones i saw entertaining",
+                "intent": "PersonalOpinionNeg",
+                "entities": [
+                    {
+                        "category": "Genre",
+                        "offset": 14,
+                        "length": 9
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i especially like romantic comedies and dramas",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Genre",
+                        "offset": 18,
+                        "length": 8
+                    },
+                    {
+                        "category": "Genre",
+                        "offset": 27,
+                        "length": 8
+                    },
+                    {
+                        "category": "Genre",
+                        "offset": 40,
+                        "length": 6
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i hate science fiction",
+                "intent": "PersonalOpinionNeg",
+                "entities": [
+                    {
+                        "category": "Genre",
+                        "offset": 7,
+                        "length": 15
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i have no feelings about robert downey jr",
+                "intent": "PersonalOpinionNeg",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 25,
+                        "length": 16
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i have no interest in kill bill as i am not fond of uma thurman",
+                "intent": "PersonalOpinionNeg",
+                "entities": [
+                    {
+                        "category": "Movie",
+                        "offset": 22,
+                        "length": 9
+                    },
+                    {
+                        "category": "Person",
+                        "offset": 52,
+                        "length": 11
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i have no real feeling about alien",
+                "intent": "PersonalOpinionNeg",
+                "entities": [
+                    {
+                        "category": "Movie",
+                        "offset": 29,
+                        "length": 5
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i have no stance about the matrix",
+                "intent": "PersonalOpinionNeg",
+                "entities": [
+                    {
+                        "category": "Movie",
+                        "offset": 23,
+                        "length": 10
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i have yet to see a bette midler movie that i didn't like",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 20,
+                        "length": 12
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i just saw frozen 2. i liked it",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Movie",
+                        "offset": 11,
+                        "length": 8
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i like action and fantasy movies. those with a nice plot",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Genre",
+                        "offset": 7,
+                        "length": 6
+                    },
+                    {
+                        "category": "Genre",
+                        "offset": 18,
+                        "length": 7
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i like action movies, romantic ones and thrillers",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Genre",
+                        "offset": 7,
+                        "length": 6
+                    },
+                    {
+                        "category": "Genre",
+                        "offset": 22,
+                        "length": 8
+                    },
+                    {
+                        "category": "Genre",
+                        "offset": 40,
+                        "length": 9
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i like cartoons like angry birds",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Genre",
+                        "offset": 7,
+                        "length": 8
+                    },
+                    {
+                        "category": "Movie",
+                        "offset": 21,
+                        "length": 11
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i like comedy but prefer it not to be vulgar or explicit",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Genre",
+                        "offset": 7,
+                        "length": 6
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i like denzel washington as an actor, and i think he was fantastic in malcolm x.",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Genre",
+                        "offset": 7,
+                        "length": 17
+                    },
+                    {
+                        "category": "Movie",
+                        "offset": 70,
+                        "length": 9
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i like documentaries or true story movies",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Genre",
+                        "offset": 24,
+                        "length": 10
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i like fantasy and action adventure movies",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Genre",
+                        "offset": 7,
+                        "length": 7
+                    },
+                    {
+                        "category": "Genre",
+                        "offset": 19,
+                        "length": 6
+                    },
+                    {
+                        "category": "Genre",
+                        "offset": 26,
+                        "length": 9
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i like gangster movies, action movies and dramas",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Genre",
+                        "offset": 24,
+                        "length": 6
+                    },
+                    {
+                        "category": "Genre",
+                        "offset": 42,
+                        "length": 6
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i like many genres such as romance, comedies, suspense and thrillers",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Genre",
+                        "offset": 27,
+                        "length": 7
+                    },
+                    {
+                        "category": "Genre",
+                        "offset": 36,
+                        "length": 8
+                    },
+                    {
+                        "category": "Genre",
+                        "offset": 46,
+                        "length": 8
+                    },
+                    {
+                        "category": "Genre",
+                        "offset": 59,
+                        "length": 9
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i like many movie genres, expecially superhero, comedy and mystery movies",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Genre",
+                        "offset": 48,
+                        "length": 6
+                    },
+                    {
+                        "category": "Genre",
+                        "offset": 59,
+                        "length": 7
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i like sci-fi and fantasy",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Genre",
+                        "offset": 7,
+                        "length": 6
+                    },
+                    {
+                        "category": "Genre",
+                        "offset": 18,
+                        "length": 7
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i like sci-fi but i enojoy any kind of movies' genre",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Genre",
+                        "offset": 7,
+                        "length": 6
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i like sci-fi movies",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Genre",
+                        "offset": 7,
+                        "length": 6
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i like the way will smith acts",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 15,
+                        "length": 10
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i like thrillers",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Genre",
+                        "offset": 7,
+                        "length": 9
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i liked frozen",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Movie",
+                        "offset": 8,
+                        "length": 6
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i love back to the future",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Movie",
+                        "offset": 7,
+                        "length": 18
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i love chris pratt",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 7,
+                        "length": 11
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i love it",
+                "intent": "PersonalOpinionPos",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "i love meryl streep and marlee matlin",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 7,
+                        "length": 12
+                    },
+                    {
+                        "category": "Person",
+                        "offset": 24,
+                        "length": 13
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i love thrillers and movies with suspense",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Genre",
+                        "offset": 7,
+                        "length": 9
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i love will smith!",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 7,
+                        "length": 10
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i love wonder years",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Movie",
+                        "offset": 7,
+                        "length": 12
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i loved forrest gump",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Movie",
+                        "offset": 8,
+                        "length": 12
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i loved it. she drives me crazy. clowns and dolls scare me to death.",
+                "intent": "PersonalOpinionPos",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "i mostly like comedies and thrillers and those movies with a good direction, but i must be in a good mood",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Genre",
+                        "offset": 14,
+                        "length": 8
+                    },
+                    {
+                        "category": "Genre",
+                        "offset": 27,
+                        "length": 9
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i really enjoyed avengers endgame because i liked the pace and the special effects were awesome",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Movie",
+                        "offset": 17,
+                        "length": 16
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i really enjoyed deadpool because it was the right mix between comedy and action",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Movie",
+                        "offset": 17,
+                        "length": 8
+                    },
+                    {
+                        "category": "Genre",
+                        "offset": 63,
+                        "length": 6
+                    },
+                    {
+                        "category": "Genre",
+                        "offset": 74,
+                        "length": 6
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i really like comedy and action movies",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Genre",
+                        "offset": 14,
+                        "length": 6
+                    },
+                    {
+                        "category": "Genre",
+                        "offset": 25,
+                        "length": 6
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i really like denzel washington, he's a great actor",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 14,
+                        "length": 17
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i really like funny movies and also with suspence",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Genre",
+                        "offset": 14,
+                        "length": 5
+                    },
+                    {
+                        "category": "Genre",
+                        "offset": 41,
+                        "length": 8
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i really like terminatior' movies but i've already seen the lastest one",
+                "intent": "PersonalOpinionPos",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "i really like the wedding singer",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Movie",
+                        "offset": 14,
+                        "length": 18
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i really like tom hanks",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 14,
+                        "length": 9
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i really like will smith",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 14,
+                        "length": 10
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i really liked it, one of the best film that i've ever seen",
+                "intent": "PersonalOpinionPos",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "i remember mr. rogers from when i was little and i would love to show it to my children",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Movie",
+                        "offset": 11,
+                        "length": 10
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i respect tom cruise's acting, i especially enjoyed him in top gun.",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 10,
+                        "length": 10
+                    },
+                    {
+                        "category": "Movie",
+                        "offset": 59,
+                        "length": 7
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i started to watch it but i didn't like it",
+                "intent": "PersonalOpinionNeg",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "i steer clear of comedy shows because i didn't find the ones i watched amusing",
+                "intent": "PersonalOpinionNeg",
+                "entities": [
+                    {
+                        "category": "Genre",
+                        "offset": 17,
+                        "length": 6
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i think that between this two, playing with fire is a must-see movie",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Movie",
+                        "offset": 31,
+                        "length": 17
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i think tom hanks is suitable",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 8,
+                        "length": 9
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i usually watch action movies but i also like kids' movies",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Genre",
+                        "offset": 16,
+                        "length": 6
+                    },
+                    {
+                        "category": "Genre",
+                        "offset": 46,
+                        "length": 4
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i usually watch horror, action or sports film",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Genre",
+                        "offset": 16,
+                        "length": 6
+                    },
+                    {
+                        "category": "Genre",
+                        "offset": 24,
+                        "length": 6
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i want to watch a john wayne movie",
+                "intent": "GetBy",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 18,
+                        "length": 10
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i watch action or adventure",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Genre",
+                        "offset": 8,
+                        "length": 6
+                    },
+                    {
+                        "category": "Genre",
+                        "offset": 18,
+                        "length": 9
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i would like to see a movie that anne hathaway starred in",
+                "intent": "GetBy",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 33,
+                        "length": 13
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i would like to see a sci-fi film",
+                "intent": "GetBy",
+                "entities": [
+                    {
+                        "category": "Genre",
+                        "offset": 22,
+                        "length": 6
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i would like to watch a film with courtney cox",
+                "intent": "GetBy",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 34,
+                        "length": 12
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i would like to watch a movie by steven spielberg",
+                "intent": "GetBy",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 33,
+                        "length": 16
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i would like to watch a movie directed by francis ford coppola",
+                "intent": "GetBy",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 42,
+                        "length": 20
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i would like to watch a movie starring jared leto",
+                "intent": "GetBy",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 39,
+                        "length": 10
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i would like to watch an action movie",
+                "intent": "GetBy",
+                "entities": [
+                    {
+                        "category": "Genre",
+                        "offset": 25,
+                        "length": 6
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i would like to watch an action or adventure movie",
+                "intent": "GetBy",
+                "entities": [
+                    {
+                        "category": "Genre",
+                        "offset": 25,
+                        "length": 6
+                    },
+                    {
+                        "category": "Genre",
+                        "offset": 35,
+                        "length": 9
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i would love to watch a movie starring natalie portman",
+                "intent": "GetBy",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 39,
+                        "length": 15
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i'm a fan of julia roberts",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 13,
+                        "length": 13
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i'm a stephen king fan, so any of his, the shining is my favourite, gerald's game as well",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Movie",
+                        "offset": 39,
+                        "length": 11
+                    },
+                    {
+                        "category": "Movie",
+                        "offset": 68,
+                        "length": 13
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i'm interested in watching a movie with johnny depp",
+                "intent": "GetBy",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 40,
+                        "length": 11
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i'm looking for a movie that anne hathaway starred in",
+                "intent": "GetBy",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 29,
+                        "length": 13
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i'm looking for a movie with meryl streep",
+                "intent": "GetBy",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 29,
+                        "length": 12
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i'm looking for something to see, i prefer an action movie, a comedy or a thriller if it is not too scary",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Genre",
+                        "offset": 46,
+                        "length": 6
+                    },
+                    {
+                        "category": "Genre",
+                        "offset": 62,
+                        "length": 6
+                    },
+                    {
+                        "category": "Genre",
+                        "offset": 74,
+                        "length": 8
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i'm not a fan of romance because i didn't like the ones i've seen",
+                "intent": "PersonalOpinionNeg",
+                "entities": [
+                    {
+                        "category": "Genre",
+                        "offset": 17,
+                        "length": 7
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i'm not fond of fantasy movies because i didn't enjoy the ones i watched.",
+                "intent": "PersonalOpinionNeg",
+                "entities": [
+                    {
+                        "category": "Genre",
+                        "offset": 16,
+                        "length": 7
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i've seen frozen 2 recently even though i'm an adult, i really enjoyed it",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Movie",
+                        "offset": 10,
+                        "length": 8
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i've seen it and it's the kind of movie that i like",
+                "intent": "PersonalOpinionPos",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "i've seen it, it was amazing",
+                "intent": "PersonalOpinionPos",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "i've seen paranormal activity, i liked it",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Movie",
+                        "offset": 10,
+                        "length": 19
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "i've watched spiderman far from home, it was pretty cool",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Movie",
+                        "offset": 13,
+                        "length": 23
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "it's perfect",
+                "intent": "PersonalOpinionPos",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "james cameron is a great director",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 0,
+                        "length": 13
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "jim carrey gave a great performance",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 0,
+                        "length": 10
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "kill bill doesn't fit my taste as i am not interested in action movies",
+                "intent": "PersonalOpinionNeg",
+                "entities": [
+                    {
+                        "category": "Movie",
+                        "offset": 0,
+                        "length": 9
+                    },
+                    {
+                        "category": "Genre",
+                        "offset": 57,
+                        "length": 6
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "let's see, i liked die hard, avengers, john wick, highlander, these kinds of movies, i also liked goodfellas, casino and the godfather",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Movie",
+                        "offset": 19,
+                        "length": 8
+                    },
+                    {
+                        "category": "Movie",
+                        "offset": 29,
+                        "length": 8
+                    },
+                    {
+                        "category": "Movie",
+                        "offset": 39,
+                        "length": 9
+                    },
+                    {
+                        "category": "Movie",
+                        "offset": 50,
+                        "length": 10
+                    },
+                    {
+                        "category": "Movie",
+                        "offset": 98,
+                        "length": 10
+                    },
+                    {
+                        "category": "Movie",
+                        "offset": 110,
+                        "length": 6
+                    },
+                    {
+                        "category": "Movie",
+                        "offset": 121,
+                        "length": 13
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "mh, actually i don’t think i’m a huge fan of horror movies because last time i watched saw i didn’t sleep for a week, i got too scared",
+                "intent": "PersonalOpinionNeg",
+                "entities": [
+                    {
+                        "category": "Genre",
+                        "offset": 45,
+                        "length": 6
+                    },
+                    {
+                        "category": "Movie",
+                        "offset": 87,
+                        "length": 3
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "mh, you know, i’m not such a keen-thriller lover because i didn’t really liked saw",
+                "intent": "PersonalOpinionNeg",
+                "entities": [
+                    {
+                        "category": "Genre",
+                        "offset": 34,
+                        "length": 8
+                    },
+                    {
+                        "category": "Movie",
+                        "offset": 79,
+                        "length": 3
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "mostly action but i also like crime",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Genre",
+                        "offset": 7,
+                        "length": 6
+                    },
+                    {
+                        "category": "Genre",
+                        "offset": 30,
+                        "length": 5
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "musicals are not a genre that i enjoy especially as the movie grease",
+                "intent": "PersonalOpinionNeg",
+                "entities": [
+                    {
+                        "category": "Genre",
+                        "offset": 0,
+                        "length": 8
+                    },
+                    {
+                        "category": "Movie",
+                        "offset": 62,
+                        "length": 6
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "my dislike for jodie foster's performance in the silence of the lambs is why i cannot watch it.",
+                "intent": "PersonalOpinionNeg",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 15,
+                        "length": 12
+                    },
+                    {
+                        "category": "Movie",
+                        "offset": 45,
+                        "length": 24
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "nah, i’m not really into romantic comedy because i just got bored watching isn’t romantic?",
+                "intent": "PersonalOpinionNeg",
+                "entities": [
+                    {
+                        "category": "Genre",
+                        "offset": 25,
+                        "length": 8
+                    },
+                    {
+                        "category": "Genre",
+                        "offset": 34,
+                        "length": 6
+                    },
+                    {
+                        "category": "Movie",
+                        "offset": 75,
+                        "length": 15
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "nicholas cage's acting leaves me unimpressed, particularly in the movie color out of space",
+                "intent": "PersonalOpinionNeg",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 0,
+                        "length": 13
+                    },
+                    {
+                        "category": "Movie",
+                        "offset": 72,
+                        "length": 18
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "nicholas cage's acting is the reason i do not like ghost rider",
+                "intent": "PersonalOpinionNeg",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 0,
+                        "length": 13
+                    },
+                    {
+                        "category": "Movie",
+                        "offset": 51,
+                        "length": 11
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "no",
+                "intent": "Reject",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "no i don't like will smith",
+                "intent": "PersonalOpinionNeg",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 16,
+                        "length": 10
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "no no",
+                "intent": "Reject",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "no please",
+                "intent": "Reject",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "no thank you",
+                "intent": "Reject",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "no, i don't enjoy the godfather because i don't like al pacino.",
+                "intent": "PersonalOpinionNeg",
+                "entities": [
+                    {
+                        "category": "Movie",
+                        "offset": 18,
+                        "length": 13
+                    },
+                    {
+                        "category": "Person",
+                        "offset": 53,
+                        "length": 9
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "no, i don't like angelina jolie because i don't like romantic comedies.",
+                "intent": "PersonalOpinionNeg",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 17,
+                        "length": 14
+                    },
+                    {
+                        "category": "Genre",
+                        "offset": 53,
+                        "length": 8
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "no, i don't like avengers: endgame because i don't like chris evans.",
+                "intent": "PersonalOpinionNeg",
+                "entities": [
+                    {
+                        "category": "Movie",
+                        "offset": 17,
+                        "length": 17
+                    },
+                    {
+                        "category": "Person",
+                        "offset": 56,
+                        "length": 11
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "no, i don't like brad pitt because i don't like horror movies.",
+                "intent": "PersonalOpinionNeg",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 17,
+                        "length": 9
+                    },
+                    {
+                        "category": "Genre",
+                        "offset": 48,
+                        "length": 6
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "no, i don't like denzel washington because i don't like crime thrillers.",
+                "intent": "PersonalOpinionNeg",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 17,
+                        "length": 17
+                    },
+                    {
+                        "category": "Genre",
+                        "offset": 56,
+                        "length": 5
+                    },
+                    {
+                        "category": "Genre",
+                        "offset": 62,
+                        "length": 9
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "no, i don't like emma stone because i don't like musicals.",
+                "intent": "PersonalOpinionNeg",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 17,
+                        "length": 10
+                    },
+                    {
+                        "category": "Genre",
+                        "offset": 49,
+                        "length": 8
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "no, i don't like george clooney because i don't like action movies.",
+                "intent": "PersonalOpinionNeg",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 17,
+                        "length": 14
+                    },
+                    {
+                        "category": "Genre",
+                        "offset": 53,
+                        "length": 6
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "no, i don't like inception because i don't like leonardo di caprio.",
+                "intent": "PersonalOpinionNeg",
+                "entities": [
+                    {
+                        "category": "Movie",
+                        "offset": 17,
+                        "length": 9
+                    },
+                    {
+                        "category": "Person",
+                        "offset": 48,
+                        "length": 18
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "no, i don't like jennifer lawrence because i don't like fantasy movies.",
+                "intent": "PersonalOpinionNeg",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 17,
+                        "length": 17
+                    },
+                    {
+                        "category": "Genre",
+                        "offset": 56,
+                        "length": 7
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "no, i don't like john wick because i don't like action movies.",
+                "intent": "PersonalOpinionNeg",
+                "entities": [
+                    {
+                        "category": "Movie",
+                        "offset": 17,
+                        "length": 9
+                    },
+                    {
+                        "category": "Genre",
+                        "offset": 48,
+                        "length": 6
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "no, i don't like johnny depp because i don't like science fiction movies.",
+                "intent": "PersonalOpinionNeg",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 17,
+                        "length": 11
+                    },
+                    {
+                        "category": "Genre",
+                        "offset": 50,
+                        "length": 15
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "no, i don't like kill bill because i don't like action movies.",
+                "intent": "PersonalOpinionNeg",
+                "entities": [
+                    {
+                        "category": "Movie",
+                        "offset": 17,
+                        "length": 9
+                    },
+                    {
+                        "category": "Genre",
+                        "offset": 48,
+                        "length": 6
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "no, i don't like kill bill because i don't like uma thurman",
+                "intent": "PersonalOpinionNeg",
+                "entities": [
+                    {
+                        "category": "Movie",
+                        "offset": 17,
+                        "length": 9
+                    },
+                    {
+                        "category": "Person",
+                        "offset": 48,
+                        "length": 11
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "no, i don't like leonardo dicaprio because i don't like thrillers.",
+                "intent": "PersonalOpinionNeg",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 17,
+                        "length": 17
+                    },
+                    {
+                        "category": "Genre",
+                        "offset": 56,
+                        "length": 9
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "no, i don't like meryl streep because i don't like biographical films.",
+                "intent": "PersonalOpinionNeg",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 17,
+                        "length": 12
+                    },
+                    {
+                        "category": "Genre",
+                        "offset": 51,
+                        "length": 12
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "no, i don't like sandra bullock because i don't like action movies.",
+                "intent": "PersonalOpinionNeg",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 17,
+                        "length": 14
+                    },
+                    {
+                        "category": "Genre",
+                        "offset": 53,
+                        "length": 6
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "no, i don't like the matrix because i don't like keanu reeves.",
+                "intent": "PersonalOpinionNeg",
+                "entities": [
+                    {
+                        "category": "Movie",
+                        "offset": 17,
+                        "length": 10
+                    },
+                    {
+                        "category": "Person",
+                        "offset": 49,
+                        "length": 12
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "no, i don't like tom hanks because i don't like historical dramas.",
+                "intent": "PersonalOpinionNeg",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 17,
+                        "length": 9
+                    },
+                    {
+                        "category": "Genre",
+                        "offset": 48,
+                        "length": 10
+                    },
+                    {
+                        "category": "Genre",
+                        "offset": 59,
+                        "length": 6
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "no, i don't watch breaking bad because i don't like aaron paul.",
+                "intent": "PersonalOpinionNeg",
+                "entities": [
+                    {
+                        "category": "Movie",
+                        "offset": 18,
+                        "length": 12
+                    },
+                    {
+                        "category": "Person",
+                        "offset": 52,
+                        "length": 10
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "no, i don't watch game of thrones because i don't like emilia clarke.",
+                "intent": "PersonalOpinionNeg",
+                "entities": [
+                    {
+                        "category": "Movie",
+                        "offset": 18,
+                        "length": 15
+                    },
+                    {
+                        "category": "Person",
+                        "offset": 55,
+                        "length": 13
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "no, i don’t love sex and the city because i’m not a fan of sarah jessica parker",
+                "intent": "PersonalOpinionNeg",
+                "entities": [
+                    {
+                        "category": "Movie",
+                        "offset": 17,
+                        "length": 16
+                    },
+                    {
+                        "category": "Person",
+                        "offset": 58,
+                        "length": 21
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "no, i don’t really like don’t look up because i’m not crazy about leonardo di caprio",
+                "intent": "PersonalOpinionNeg",
+                "entities": [
+                    {
+                        "category": "Movie",
+                        "offset": 24,
+                        "length": 13
+                    },
+                    {
+                        "category": "Person",
+                        "offset": 66,
+                        "length": 18
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "no, i don’t really like horror movies because i didn’t enjoy nope",
+                "intent": "PersonalOpinionNeg",
+                "entities": [
+                    {
+                        "category": "Genre",
+                        "offset": 24,
+                        "length": 6
+                    },
+                    {
+                        "category": "Movie",
+                        "offset": 61,
+                        "length": 4
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "no, i don’t really love watching action movies because i’m not a big fan of star wars",
+                "intent": "PersonalOpinionNeg",
+                "entities": [
+                    {
+                        "category": "Genre",
+                        "offset": 33,
+                        "length": 6
+                    },
+                    {
+                        "category": "Movie",
+                        "offset": 76,
+                        "length": 9
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "no, i'm not a fan of pulp fiction because i don't appreciate john travolta's acting.",
+                "intent": "PersonalOpinionNeg",
+                "entities": [
+                    {
+                        "category": "Movie",
+                        "offset": 21,
+                        "length": 12
+                    },
+                    {
+                        "category": "Person",
+                        "offset": 60,
+                        "length": 14
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "no, i’m not crazy about crudelia because i don’t like comedy",
+                "intent": "PersonalOpinionNeg",
+                "entities": [
+                    {
+                        "category": "Movie",
+                        "offset": 24,
+                        "length": 8
+                    },
+                    {
+                        "category": "Genre",
+                        "offset": 54,
+                        "length": 6
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "no, i’m not crazy about will smith because i’m not crazy about animation movies",
+                "intent": "PersonalOpinionNeg",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 24,
+                        "length": 10
+                    },
+                    {
+                        "category": "Genre",
+                        "offset": 63,
+                        "length": 9
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "no, i’m not into legally blonde because i don’t like jennifer coolidge",
+                "intent": "PersonalOpinionNeg",
+                "entities": [
+                    {
+                        "category": "Movie",
+                        "offset": 17,
+                        "length": 14
+                    },
+                    {
+                        "category": "Person",
+                        "offset": 53,
+                        "length": 17
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "none",
+                "intent": "Reject",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "nope",
+                "intent": "Reject",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "oh no",
+                "intent": "Reject",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "please recommend a thriller",
+                "intent": "GetBy",
+                "entities": [
+                    {
+                        "category": "Genre",
+                        "offset": 19,
+                        "length": 8
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "recently i saw john wick 3. good movie, full of action",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Movie",
+                        "offset": 15,
+                        "length": 11
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "recommend a movie by james cameron",
+                "intent": "GetBy",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 21,
+                        "length": 13
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "recommend me a movie crime",
+                "intent": "GetBy",
+                "entities": [
+                    {
+                        "category": "Genre",
+                        "offset": 21,
+                        "length": 5
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "recommend something by hitchcock",
+                "intent": "GetBy",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 23,
+                        "length": 9
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "search for anthony hopkins films",
+                "intent": "GetBy",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 11,
+                        "length": 15
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "search for ridley scott films",
+                "intent": "GetBy",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 11,
+                        "length": 12
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "something starring sandra bullock",
+                "intent": "GetBy",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 19,
+                        "length": 14
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "sometimes i watch cartoons",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Genre",
+                        "offset": 18,
+                        "length": 8
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "suggest an action movie for me",
+                "intent": "GetBy",
+                "entities": [
+                    {
+                        "category": "Genre",
+                        "offset": 11,
+                        "length": 6
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "suggest an animated movie to watch tonight",
+                "intent": "GetBy",
+                "entities": [
+                    {
+                        "category": "Genre",
+                        "offset": 11,
+                        "length": 8
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "the addams family was bad",
+                "intent": "PersonalOpinionNeg",
+                "entities": [
+                    {
+                        "category": "Movie",
+                        "offset": 0,
+                        "length": 17
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "the cults are always awesome",
+                "intent": "PersonalOpinionPos",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "tom hanks is one of my favorite actors, and i loved his portrayal in forrest gump.",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 0,
+                        "length": 9
+                    },
+                    {
+                        "category": "Movie",
+                        "offset": 69,
+                        "length": 12
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "what can you do",
+                "intent": "None",
+                "entities": []
+            },
+            {
+                "text": "what do you recommend? i like thriller, drama, suspence, family movies",
+                "intent": "PersonalOpinionPos",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "what is the time now",
+                "intent": "None",
+                "entities": []
+            },
+            {
+                "text": "what's my name",
+                "intent": "None",
+                "entities": []
+            },
+            {
+                "text": "what's the weather today",
+                "intent": "None",
+                "entities": []
+            },
+            {
+                "text": "what's your name",
+                "intent": "None",
+                "entities": []
+            },
+            {
+                "text": "will farrell is one of my favourite actors",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 0,
+                        "length": 12
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "will smith is a talented actor, and i really enjoyed his performance in the pursuit of happyness.",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 0,
+                        "length": 10
+                    },
+                    {
+                        "category": "Movie",
+                        "offset": 72,
+                        "length": 24
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "yah",
+                "intent": "Confirm",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "yeah",
+                "intent": "Confirm",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "yep",
+                "intent": "Confirm",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "yes i like the matrix",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Movie",
+                        "offset": 11,
+                        "length": 10
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "yes i would like to watch an action movie",
+                "intent": "GetBy",
+                "entities": [
+                    {
+                        "category": "Genre",
+                        "offset": 29,
+                        "length": 6
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "yes i'm looking for sci-fi movies",
+                "intent": "GetBy",
+                "entities": [
+                    {
+                        "category": "Genre",
+                        "offset": 20,
+                        "length": 6
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "yes it does",
+                "intent": "Confirm",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "yes it is",
+                "intent": "Confirm",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "yes recommend an adventure movie",
+                "intent": "GetBy",
+                "entities": [
+                    {
+                        "category": "Genre",
+                        "offset": 17,
+                        "length": 9
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "yes, i enjoy action movies, specifically star wars",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Genre",
+                        "offset": 13,
+                        "length": 6
+                    },
+                    {
+                        "category": "Movie",
+                        "offset": 41,
+                        "length": 9
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "yes, i enjoy watching meryl streep, especially in doubt.",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 22,
+                        "length": 12
+                    },
+                    {
+                        "category": "Person",
+                        "offset": 50,
+                        "length": 5
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "yes, i like johnny depp, especially in edward scissorhands",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 12,
+                        "length": 11
+                    },
+                    {
+                        "category": "Movie",
+                        "offset": 39,
+                        "length": 19
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "yes, i like leonardo dicaprio, and i think he was perfect in the departed.",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 12,
+                        "length": 17
+                    },
+                    {
+                        "category": "Movie",
+                        "offset": 59,
+                        "length": 14
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "yes, i like will smith, above all in collateral beauty",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 12,
+                        "length": 10
+                    },
+                    {
+                        "category": "Movie",
+                        "offset": 37,
+                        "length": 17
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "yes, i love johnny depp, in particular in pirates of carribean",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 12,
+                        "length": 11
+                    },
+                    {
+                        "category": "Movie",
+                        "offset": 42,
+                        "length": 20
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "yes, i’m a big fan of sarah jessica parker, above all in sex and the city",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 22,
+                        "length": 20
+                    },
+                    {
+                        "category": "Movie",
+                        "offset": 57,
+                        "length": 16
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "yes, i’m a die-hard fan of ryan gosling, especially in drive",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 27,
+                        "length": 12
+                    },
+                    {
+                        "category": "Movie",
+                        "offset": 55,
+                        "length": 5
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "yes, i’m a huge fan of keanu reeves, in particular in the matrix",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 23,
+                        "length": 12
+                    },
+                    {
+                        "category": "Movie",
+                        "offset": 54,
+                        "length": 10
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "yes, i’m a huge fan of romantic comedies, especially isn’t romantic?",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Genre",
+                        "offset": 23,
+                        "length": 8
+                    },
+                    {
+                        "category": "Genre",
+                        "offset": 32,
+                        "length": 8
+                    },
+                    {
+                        "category": "Movie",
+                        "offset": 53,
+                        "length": 15
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "yes, i’m a keen-thriller lover, especially smile",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Genre",
+                        "offset": 16,
+                        "length": 8
+                    },
+                    {
+                        "category": "Movie",
+                        "offset": 43,
+                        "length": 5
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "yes, i’m into comedy movies, especially don’t look up",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Genre",
+                        "offset": 14,
+                        "length": 6
+                    },
+                    {
+                        "category": "Movie",
+                        "offset": 40,
+                        "length": 13
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "yes, i’m wild about will smith, specifically his performance in collateral beauty",
+                "intent": "PersonalOpinionPos",
+                "entities": [
+                    {
+                        "category": "Person",
+                        "offset": 20,
+                        "length": 10
+                    },
+                    {
+                        "category": "Movie",
+                        "offset": 64,
+                        "length": 17
+                    }
+                ],
+                "dataset": "Train"
+            }
+        ]
+    }
+}
