@@ -14,4 +14,4 @@
 <!-- LICENSE -->
 ## License
 
-Distributed under the GNU GPL v3 license.
+Distributed under the MIT license.
