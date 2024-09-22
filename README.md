@@ -13,7 +13,7 @@
 
 ## Introduction
 
-This is the demo project used to showcase the FANTASIA Interaction Model: a combination of Behaviour Trees, Probabilistic Graphical Models and Graph Databases to implement linguistically motivated Conversational AI. This project has been presented at the following events:
+This is the demo project used to showcase the FANTASIA Interaction Model: a combination of Behaviour Trees, Probabilistic Graphical Models and Graph Databases to implement linguistically motivated Conversational AI. This project is based on our work on Conversational Recommender Systems with the Jason character and has been presented at the following events:
 
 - Synthesis of Human Behaviour Training Event (Social CDT - University of Glasgow)
 - Virtual Reality and Cultural Heritage tutorial (University of Haifa)
