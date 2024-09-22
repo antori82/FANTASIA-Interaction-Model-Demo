@@ -1,2 +1,8 @@
 
 /Plugins/ACE
+/.vs
+.vsconfig
+FANTASIATemplate.sln
+/Intermediate
+/Saved
+/Config/DefaultGame.ini
