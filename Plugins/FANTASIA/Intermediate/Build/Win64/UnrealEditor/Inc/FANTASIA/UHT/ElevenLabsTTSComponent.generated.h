@@ -9,13 +9,14 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-class USoundWave;
+class USoundWaveProcedural;
 #ifdef FANTASIA_ElevenLabsTTSComponent_generated_h
 #error "ElevenLabsTTSComponent.generated.h already included, missing '#pragma once' in ElevenLabsTTSComponent.h"
 #endif
 #define FANTASIA_ElevenLabsTTSComponent_generated_h
 
 #define FID_Perforce_FANTASIATemplate_Plugins_FANTASIA_Source_FANTASIA_Public_ElevenLabsTTSComponent_h_22_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execTTSGetRawSound); \
 	DECLARE_FUNCTION(execTTSGetSound); \
 	DECLARE_FUNCTION(execTTSSynthesize);
 

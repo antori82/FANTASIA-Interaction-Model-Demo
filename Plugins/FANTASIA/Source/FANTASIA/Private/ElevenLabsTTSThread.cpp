@@ -15,9 +15,8 @@ ElevenLabsTTSThread::ElevenLabsTTSThread(FString inKey, FString inText, FString 
 	style = inStyle;
 	use_speaker_boost = inUse_speaker_boost;
 
-	Endpoint = "https://api.elevenlabs.io/v1/text-to-speech/" + voiceID;
-
 	Thread = FRunnableThread::Create(this, TEXT("ElevenLabsTTSThread"), 0, TPri_Normal);
+	Endpoint = "https://api.elevenlabs.io/v1/text-to-speech/" + voiceID;
 }
 
 ElevenLabsTTSThread::~ElevenLabsTTSThread() {
@@ -74,6 +73,7 @@ void ElevenLabsTTSThread::Synthesize()
 				SynthResult.ssml = text;
 
 				TTSResultAvailable.Broadcast(SynthResult, id);
+
 			}
 			else {
 				UE_LOG(LogTemp, Error, TEXT("Connection to the TTS endpoint failed."));

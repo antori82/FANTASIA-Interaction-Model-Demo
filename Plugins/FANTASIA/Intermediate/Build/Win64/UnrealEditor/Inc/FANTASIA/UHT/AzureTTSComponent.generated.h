@@ -16,6 +16,7 @@ class USoundWave;
 #define FANTASIA_AzureTTSComponent_generated_h
 
 #define FID_Perforce_FANTASIATemplate_Plugins_FANTASIA_Source_FANTASIA_Public_AzureTTSComponent_h_27_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execTTSGetRawSound); \
 	DECLARE_FUNCTION(execTTSGetSound); \
 	DECLARE_FUNCTION(execTTSSynthesize);
 
@@ -27,8 +28,6 @@ private: \
 public: \
 	DECLARE_CLASS(UAzureTTSComponent, UActorComponent, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/FANTASIA"), NO_API) \
 	DECLARE_SERIALIZER(UAzureTTSComponent) \
-	static const TCHAR* StaticConfigName() {return TEXT("Game");} \
- \
 	virtual UObject* _getUObject() const override { return const_cast<UAzureTTSComponent*>(this); }
 
 

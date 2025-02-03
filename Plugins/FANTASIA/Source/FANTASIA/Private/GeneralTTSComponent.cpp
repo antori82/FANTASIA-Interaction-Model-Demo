@@ -53,13 +53,25 @@ void UGeneralTTSComponent::TTSSynthesize(FString ssml, FString id)
 }
 
 USoundWave* UGeneralTTSComponent::TTSGetSound(FString id) {
-	USoundWave* SyntheticVoice = NewObject<USoundWave>();
+	USoundWaveProcedural* SyntheticVoice = NewObject<USoundWaveProcedural>();
 	SyntheticVoice->SetSampleRate(SamplingRate);
 	SyntheticVoice->NumChannels = 1;
 	const int32 BytesDataPerSecond = SamplingRate;
 	SyntheticVoice->RawPCMDataSize = Buffer[id].AudioData.Num() * sizeof(uint8);
 	SyntheticVoice->Duration = (float)Buffer[id].AudioData.Num() / (2 * (float)SamplingRate);
-	SyntheticVoice->RawPCMData = static_cast<uint8*>(FMemory::Malloc(SyntheticVoice->RawPCMDataSize));
-	FMemory::Memcpy(SyntheticVoice->RawPCMData, Buffer[id].AudioData.GetData(), SyntheticVoice->RawPCMDataSize);
+	SyntheticVoice->QueueAudio((const uint8*)Buffer[id].AudioData.GetData(), SyntheticVoice->RawPCMDataSize);
 	return SyntheticVoice;
+}
+
+TArray<float> UGeneralTTSComponent::TTSGetRawSound(FString id) {
+	TArray<float> AudioData;
+
+	for (int i = 0; i < Buffer[id].AudioData.Num() * sizeof(uint8); i += 2) {
+		float NormalizedSample = 0.0f;
+		int16 Sample = *reinterpret_cast<int16*>(&Buffer[id].AudioData.GetData()[i]);
+		NormalizedSample = Sample / 32768.0f;
+
+		AudioData.Add(NormalizedSample);
+	}
+	return AudioData;
 }

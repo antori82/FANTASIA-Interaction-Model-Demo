@@ -21,7 +21,7 @@
 using namespace std;
 using namespace Microsoft::CognitiveServices::Speech;
 
-UCLASS(ClassGroup = (Azure), meta = (BlueprintSpawnableComponent), config = Game)
+UCLASS(ClassGroup = (Azure), meta = (BlueprintSpawnableComponent))
 class UAzureTTSComponent : public UActorComponent, public ITTSInterface
 {
 	GENERATED_BODY()
@@ -57,22 +57,22 @@ public:
 	UPROPERTY(BlueprintAssignable, Category = "Speech to Text")
 	FSynthesizedEvent SynthesisReady;
 
-	UPROPERTY(EditAnywhere, Category = "Configuration", Config)
+	UPROPERTY(EditAnywhere, Category = "Configuration")
 	FString Language;
 
-	UPROPERTY(EditAnywhere, Category = "Configuration", Config)
+	UPROPERTY(EditAnywhere, Category = "Configuration")
 	FString Voice;
 
-	UPROPERTY(EditAnywhere, Category = "Configuration", Config)
+	UPROPERTY(EditAnywhere, Category = "Configuration")
 	FString Key;
 
-	UPROPERTY(EditAnywhere, Category = "Configuration", Config)
+	UPROPERTY(EditAnywhere, Category = "Configuration")
 	FString Region;
 
-	UPROPERTY(EditAnywhere, Category = "Configuration", Config)
+	UPROPERTY(EditAnywhere, Category = "Configuration")
 	FString Endpoint;
 
-	UPROPERTY(EditAnywhere, Category = "Configuration", Config)
+	UPROPERTY(EditAnywhere, Category = "Configuration")
 	bool Streaming;
 
 	// Called every frame
@@ -83,4 +83,7 @@ public:
 
 	UFUNCTION(BlueprintPure, meta = (DisplayName = "Get Sound", Keywords = "Azure Plugin TTS"), Category = "TTS")
 	USoundWave* TTSGetSound(FString id) override;
+
+	UFUNCTION(BlueprintPure, meta = (DisplayName = "Get Raw Sound", Keywords = "Azure Plugin TTS"), Category = "TTS")
+	TArray<float> TTSGetRawSound(FString id);
 };
