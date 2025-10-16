@@ -1,0 +1,39 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\perforce\\fantasiatemplate\\plugins\\ace\\source\\omniverselivelink\\private\\omniversebaselistener.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\perforce\\fantasiatemplate\\intermediate\\build\\win64\\x64\\fantasiatemplateeditor\\debuggame\\unrealed\\sharedpch.unrealed.project.nonoptimized.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "d:\\perforce\\fantasiatemplate\\plugins\\ace\\intermediate\\build\\win64\\x64\\unrealeditor\\debuggame\\omniverselivelink\\definitions.omniverselivelink.h",
+            "d:\\perforce\\fantasiatemplate\\plugins\\ace\\source\\omniverselivelink\\private\\omniversebaselistener.h",
+            "c:\\program files\\epic games\\ue_5.6\\engine\\source\\runtime\\livelinkinterface\\public\\ilivelinkclient.h",
+            "c:\\program files\\epic games\\ue_5.6\\engine\\source\\runtime\\livelinkinterface\\public\\livelinkrefskeleton.h",
+            "c:\\program files\\epic games\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\livelinkinterface\\uht\\livelinkrefskeleton.generated.h",
+            "c:\\program files\\epic games\\ue_5.6\\engine\\source\\runtime\\livelinkinterface\\public\\livelinkrole.h",
+            "c:\\program files\\epic games\\ue_5.6\\engine\\source\\runtime\\livelinkinterface\\public\\livelinktypes.h",
+            "c:\\program files\\epic games\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\livelinkinterface\\uht\\livelinktypes.generated.h",
+            "c:\\program files\\epic games\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\livelinkinterface\\uht\\livelinkrole.generated.h",
+            "c:\\program files\\epic games\\ue_5.6\\engine\\source\\runtime\\livelinkinterface\\public\\livelinkpresettypes.h",
+            "c:\\program files\\epic games\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\livelinkinterface\\uht\\livelinkpresettypes.generated.h",
+            "c:\\program files\\epic games\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\livelinkinterface\\uht\\ilivelinkclient.generated.h",
+            "d:\\perforce\\fantasiatemplate\\plugins\\ace\\source\\omniverselivelink\\private\\omniverselivelinkframeplayer.h",
+            "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.44.35207\\include\\string",
+            "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.44.35207\\include\\xstring",
+            "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.44.35207\\include\\__msvc_sanitizer_annotate_container.hpp",
+            "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.44.35207\\include\\__msvc_string_view.hpp",
+            "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.44.35207\\include\\xpolymorphic_allocator.h",
+            "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.44.35207\\include\\cctype",
+            "c:\\program files\\epic games\\ue_5.6\\engine\\source\\runtime\\networking\\public\\common\\tcpsocketbuilder.h",
+            "c:\\program files\\epic games\\ue_5.6\\engine\\source\\runtime\\sockets\\public\\socketsubsystem.h",
+            "c:\\program files\\epic games\\ue_5.6\\engine\\source\\runtime\\sockets\\public\\addressinfotypes.h",
+            "c:\\program files\\epic games\\ue_5.6\\engine\\source\\runtime\\networking\\public\\interfaces\\ipv4\\ipv4address.h",
+            "c:\\program files\\epic games\\ue_5.6\\engine\\source\\runtime\\networking\\public\\interfaces\\ipv4\\ipv4subnetmask.h",
+            "c:\\program files\\epic games\\ue_5.6\\engine\\source\\runtime\\networking\\public\\interfaces\\ipv4\\ipv4endpoint.h",
+            "c:\\program files\\epic games\\ue_5.6\\engine\\source\\runtime\\sockets\\public\\sockets.h",
+            "c:\\program files\\epic games\\ue_5.6\\engine\\source\\runtime\\networking\\public\\common\\tcplistener.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

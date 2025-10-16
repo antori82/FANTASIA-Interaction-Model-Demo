@@ -1,0 +1,8 @@
+{
+	"BuildId": "43139311",
+	"Modules": 
+	{
+		"OmniverseAudioMixer": "UnrealEditor-OmniverseAudioMixer-Win64-DebugGame.dll",
+		"OmniverseLiveLink": "UnrealEditor-OmniverseLiveLink-Win64-DebugGame.dll"
+	}
+}

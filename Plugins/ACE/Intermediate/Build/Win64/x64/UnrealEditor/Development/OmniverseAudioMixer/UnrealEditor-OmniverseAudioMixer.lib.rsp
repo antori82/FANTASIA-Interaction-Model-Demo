@@ -1,0 +1,14 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-OmniverseAudioMixer.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"D:/Perforce/FANTASIATemplate/Intermediate/Build/Win64/x64/FANTASIATemplateEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.h.obj"
+"D:/Perforce/FANTASIATemplate/Plugins/ACE/Intermediate/Build/Win64/x64/UnrealEditor/Development/OmniverseAudioMixer/Module.OmniverseAudioMixer.cpp.obj"
+"D:/Perforce/FANTASIATemplate/Plugins/ACE/Intermediate/Build/Win64/x64/UnrealEditor/Development/OmniverseAudioMixer/OmniverseAudioMixer.cpp.obj"
+"D:/Perforce/FANTASIATemplate/Plugins/ACE/Intermediate/Build/Win64/x64/UnrealEditor/Development/OmniverseAudioMixer/OmniverseMixerDevice.cpp.obj"
+"D:/Perforce/FANTASIATemplate/Plugins/ACE/Intermediate/Build/Win64/x64/UnrealEditor/Development/OmniverseAudioMixer/Default.rc2.res"
+/OUT:"D:/Perforce/FANTASIATemplate/Plugins/ACE/Intermediate/Build/Win64/x64/UnrealEditor/Development/OmniverseAudioMixer/UnrealEditor-OmniverseAudioMixer.lib"

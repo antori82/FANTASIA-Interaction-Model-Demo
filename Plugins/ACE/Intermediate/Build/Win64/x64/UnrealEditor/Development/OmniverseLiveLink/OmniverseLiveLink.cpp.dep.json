@@ -1,0 +1,25 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\perforce\\fantasiatemplate\\plugins\\ace\\source\\omniverselivelink\\private\\omniverselivelink.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\perforce\\fantasiatemplate\\intermediate\\build\\win64\\x64\\fantasiatemplateeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "d:\\perforce\\fantasiatemplate\\plugins\\ace\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\omniverselivelink\\definitions.omniverselivelink.h",
+            "d:\\perforce\\fantasiatemplate\\plugins\\ace\\source\\omniverselivelink\\public\\omniverselivelink.h",
+            "d:\\perforce\\fantasiatemplate\\plugins\\ace\\source\\omniverselivelink\\private\\aceprivate.h",
+            "d:\\perforce\\fantasiatemplate\\plugins\\ace\\source\\omniverselivelink\\public\\omniverselivelinkcommands.h",
+            "d:\\perforce\\fantasiatemplate\\plugins\\ace\\source\\omniverselivelink\\public\\omniverselivelinkstyle.h",
+            "c:\\program files\\epic games\\ue_5.6\\engine\\source\\runtime\\projects\\public\\interfaces\\ipluginmanager.h",
+            "c:\\program files\\epic games\\ue_5.6\\engine\\source\\runtime\\projects\\public\\plugindescriptor.h",
+            "c:\\program files\\epic games\\ue_5.6\\engine\\source\\runtime\\projects\\public\\custombuildsteps.h",
+            "c:\\program files\\epic games\\ue_5.6\\engine\\source\\runtime\\projects\\public\\localizationdescriptor.h",
+            "c:\\program files\\epic games\\ue_5.6\\engine\\source\\runtime\\projects\\public\\moduledescriptor.h",
+            "c:\\program files\\epic games\\ue_5.6\\engine\\source\\runtime\\projects\\public\\plugindisalloweddescriptor.h",
+            "c:\\program files\\epic games\\ue_5.6\\engine\\source\\runtime\\projects\\public\\pluginreferencedescriptor.h",
+            "c:\\program files\\epic games\\ue_5.6\\engine\\source\\runtime\\projects\\public\\versescope.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

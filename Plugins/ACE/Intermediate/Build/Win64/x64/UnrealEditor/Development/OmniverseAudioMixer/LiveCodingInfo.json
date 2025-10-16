@@ -1,0 +1,10 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.OmniverseAudioMixer.cpp.obj": [
+			"PerModuleInline.gen.cpp.obj",
+			"OmniverseAudioMixer.cpp.obj",
+			"OmniverseMixerDevice.cpp.obj"
+		]
+	}
+}

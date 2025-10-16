@@ -1,0 +1,17 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\perforce\\fantasiatemplate\\plugins\\ace\\source\\omniverselivelink\\private\\somniverselivelinkwidget.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\perforce\\fantasiatemplate\\intermediate\\build\\win64\\x64\\fantasiatemplateeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "d:\\perforce\\fantasiatemplate\\plugins\\ace\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\omniverselivelink\\definitions.omniverselivelink.h",
+            "d:\\perforce\\fantasiatemplate\\plugins\\ace\\source\\omniverselivelink\\private\\somniverselivelinkwidget.h",
+            "c:\\program files\\epic games\\ue_5.6\\engine\\source\\runtime\\slate\\public\\widgets\\input\\snumericentrybox.h",
+            "c:\\program files\\epic games\\ue_5.6\\engine\\source\\runtime\\slate\\public\\widgets\\input\\sspinbox.h",
+            "c:\\program files\\epic games\\ue_5.6\\engine\\source\\runtime\\slate\\public\\widgets\\colors\\scolorblock.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

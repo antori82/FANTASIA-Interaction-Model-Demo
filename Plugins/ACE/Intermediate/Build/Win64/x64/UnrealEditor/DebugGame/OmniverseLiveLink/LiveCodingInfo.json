@@ -1,0 +1,22 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.OmniverseLiveLink.cpp.obj": [
+			"OmniverseLiveLink.init.gen.cpp.obj",
+			"OmniverseLiveLinkSourceFactory.gen.cpp.obj",
+			"OmniverseLiveLinkSourceSettings.gen.cpp.obj",
+			"PerModuleInline.gen.cpp.obj",
+			"OmniverseBaseListener.cpp.obj",
+			"OmniverseLiveLink.cpp.obj",
+			"OmniverseLiveLinkCommands.cpp.obj",
+			"OmniverseLiveLinkFramePlayer.cpp.obj",
+			"OmniverseLiveLinkListener.cpp.obj",
+			"OmniverseLiveLinkSource.cpp.obj",
+			"OmniverseLiveLinkSourceFactory.cpp.obj",
+			"OmniverseLiveLinkStyle.cpp.obj",
+			"OmniverseSubmixListener.cpp.obj",
+			"OmniverseWaveStreamer.cpp.obj",
+			"SOmniverseLiveLinkWidget.cpp.obj"
+		]
+	}
+}

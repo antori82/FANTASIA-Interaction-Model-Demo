@@ -1,0 +1,8 @@
+{
+	"BuildId": "43139311",
+	"Modules": 
+	{
+		"OmniverseAudioMixer": "UnrealEditor-OmniverseAudioMixer.dll",
+		"OmniverseLiveLink": "UnrealEditor-OmniverseLiveLink.dll"
+	}
+}

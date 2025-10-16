@@ -1,0 +1,30 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\perforce\\fantasiatemplate\\plugins\\ace\\intermediate\\build\\win64\\x64\\unrealeditor\\debuggame\\omniverselivelink\\module.omniverselivelink.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\perforce\\fantasiatemplate\\intermediate\\build\\win64\\x64\\fantasiatemplateeditor\\debuggame\\unrealed\\sharedpch.unrealed.project.nonoptimized.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "d:\\perforce\\fantasiatemplate\\plugins\\ace\\intermediate\\build\\win64\\x64\\unrealeditor\\debuggame\\omniverselivelink\\definitions.omniverselivelink.h",
+            "d:\\perforce\\fantasiatemplate\\plugins\\ace\\intermediate\\build\\win64\\unrealeditor\\inc\\omniverselivelink\\uht\\omniverselivelink.init.gen.cpp",
+            "d:\\perforce\\fantasiatemplate\\plugins\\ace\\intermediate\\build\\win64\\unrealeditor\\inc\\omniverselivelink\\uht\\omniverselivelinksourcefactory.gen.cpp",
+            "d:\\perforce\\fantasiatemplate\\plugins\\ace\\source\\omniverselivelink\\private\\omniverselivelinksourcefactory.h",
+            "c:\\program files\\epic games\\ue_5.6\\engine\\source\\runtime\\livelinkinterface\\public\\livelinksourcefactory.h",
+            "c:\\program files\\epic games\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\livelinkinterface\\uht\\livelinksourcefactory.generated.h",
+            "d:\\perforce\\fantasiatemplate\\plugins\\ace\\intermediate\\build\\win64\\unrealeditor\\inc\\omniverselivelink\\uht\\omniverselivelinksourcefactory.generated.h",
+            "d:\\perforce\\fantasiatemplate\\plugins\\ace\\intermediate\\build\\win64\\unrealeditor\\inc\\omniverselivelink\\uht\\omniverselivelinksourcesettings.gen.cpp",
+            "d:\\perforce\\fantasiatemplate\\plugins\\ace\\source\\omniverselivelink\\public\\omniverselivelinksourcesettings.h",
+            "c:\\program files\\epic games\\ue_5.6\\engine\\source\\runtime\\livelinkinterface\\public\\livelinksourcesettings.h",
+            "c:\\program files\\epic games\\ue_5.6\\engine\\source\\runtime\\livelinkinterface\\public\\livelinktypes.h",
+            "c:\\program files\\epic games\\ue_5.6\\engine\\source\\runtime\\livelinkinterface\\public\\livelinkrefskeleton.h",
+            "c:\\program files\\epic games\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\livelinkinterface\\uht\\livelinkrefskeleton.generated.h",
+            "c:\\program files\\epic games\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\livelinkinterface\\uht\\livelinktypes.generated.h",
+            "c:\\program files\\epic games\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\livelinkinterface\\uht\\livelinksourcesettings.generated.h",
+            "d:\\perforce\\fantasiatemplate\\plugins\\ace\\intermediate\\build\\win64\\unrealeditor\\inc\\omniverselivelink\\uht\\omniverselivelinksourcesettings.generated.h",
+            "d:\\perforce\\fantasiatemplate\\plugins\\ace\\intermediate\\build\\win64\\x64\\unrealeditor\\debuggame\\omniverselivelink\\permoduleinline.gen.cpp",
+            "c:\\program files\\epic games\\ue_5.6\\engine\\source\\runtime\\core\\public\\hal\\permoduleinline.inl"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
